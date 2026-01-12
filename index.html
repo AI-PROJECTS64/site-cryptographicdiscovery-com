@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryptographicDiscovery.com — Cryptographic Discovery & Post-Quantum Readiness</title>
+  <meta name="description" content="CryptographicDiscovery.com — independent, descriptive .com domain for cryptographic discovery: systematic identification and inventory of cryptography across real systems to support crypto-agility and post-quantum migration planning. Neutral banner for frameworks, observatories and research programs." />
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://www.cryptographicdiscovery.com/" />
+  <link rel="alternate" href="https://www.cryptographicdiscovery.com/" hreflang="fr" />
+  <link rel="alternate" href="https://www.cryptographicdiscovery.com/" hreflang="en" />
+  <link rel="alternate" href="https://www.cryptographicdiscovery.com/" hreflang="x-default" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="CryptographicDiscovery.com — Cryptographic Discovery & Post-Quantum Readiness" />
+  <meta property="og:description" content="Independent, descriptive .com domain reserved as a neutral banner for cryptographic discovery - inventorying cryptography to support crypto-agility and post-quantum migration planning." />
+  <meta property="og:url" content="https://www.cryptographicdiscovery.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.cryptographicdiscovery.com/og.jpg" />
+  <meta property="og:image:alt" content="CryptographicDiscovery.com — digital asset for cryptographic discovery, crypto-agility and post-quantum migration planning" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.cryptographicdiscovery.com/og.jpg" />
+
+  <!-- Icons & preload -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="/logo-cryptographicdiscovery.png" imagesizes="260px" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CryptographicDiscovery.com",
+    "url": "https://www.cryptographicdiscovery.com/",
+    "inLanguage": ["fr-FR","en-GB","en-US"],
+    "description": "Independent, descriptive digital asset for cryptographic discovery: systematic identification and inventory of cryptography across real systems to support crypto-agility and post-quantum migration planning.",
+    "potentialAction": {
+      "@type": "CommunicateAction",
+      "target": "mailto:contact@cryptographicdiscovery.com"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root{
+      --bg:#020815;
+      --card:#081120;
+      --muted:#8791b0;
+      --text:#e8eefc;
+      --accent:#7fd0ff;
+      --chip:#101b34;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:8px 0 22px;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:6px 12px;
+      color:#c1ccec;
+      font-size:13px;
+    }
+    .badge-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:radial-gradient(circle,#4ade80 0,#16a34a 55%,#052e16 100%);
+      box-shadow:0 0 0 6px rgba(34,197,94,.25);
+    }
+    .lang{
+      gap:10px;
+      display:flex;
+      align-items:center;
+    }
+    .lang button{
+      background:var(--chip);
+      color:var(--text);
+      border:1px solid #1d2946;
+      padding:7px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:13px;
+    }
+    .lang button[aria-pressed="true"]{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid #1d2946;
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+    }
+    .hero h1{
+      margin:0 0 8px;
+      font-size:44px;
+      letter-spacing:.4px;
+    }
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:18px 0 6px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#122143;
+      color:#fff;
+      border:1px solid #21325b;
+      padding:11px 16px;
+      border-radius:999px;
+      cursor:pointer;
+      text-decoration:none;
+      font-size:14px;
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent;
+    }
+    .btn.btn-concept{
+      background:transparent;
+      color:var(--accent);
+      border-radius:999px;
+      border:1px solid rgba(143,176,255,0.85);
+      box-shadow:0 0 0 1px rgba(2,8,21,0.9);
+      padding:9px 16px;
+      font-size:14px;
+    }
+    .btn.btn-concept:hover{
+      text-decoration:none;
+      background:rgba(143,176,255,0.06);
+    }
+    .btn.btn-concept .cn-icon{
+      width:14px;
+      height:14px;
+      border-radius:4px;
+      background:linear-gradient(135deg,#7fd0ff,#4a8dff);
+      display:inline-block;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:18px;
+    }
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+    .chip{
+      display:inline-block;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:13px;
+      color:#c1ccec;
+    }
+    .list{
+      display:grid;
+      gap:10px;
+      margin:8px 0;
+    }
+    .muted{color:var(--muted)}
+    .foot{opacity:.8;font-size:13px;margin-top:24px}
+    img.logo{
+      max-width:260px;
+      height:auto;
+      display:block;
+      margin:10px 0 10px;
+      opacity:.97;
+      border-radius:14px;
+    }
+    @media (max-width:860px){
+      .col-6{grid-column:span 12}
+      .hero h1{font-size:34px}
+    }
+    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Digital assets available for acquisition</span>
+      </div>
+      <div class="lang">
+        <button id="btn-fr" aria-pressed="false">FR</button>
+        <button id="btn-en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+
+    <!-- ============ HERO EN ============ -->
+    <section class="card hero" data-en>
+      <h1>CryptographicDiscovery.com</h1>
+      <img class="logo" src="/logo-cryptographicdiscovery.png" alt="CryptographicDiscovery.com" loading="eager">
+
+      <p class="muted">
+        <b>Descriptive .com domain</b> for the institutional category of <b>cryptographic discovery</b>:
+        the systematic identification and inventory of cryptography in real systems (protocols, libraries, certificates, keys, dependencies and appliances),
+        enabling <b>crypto-agility</b> and <b>post-quantum migration planning</b>.<br>
+        CryptographicDiscovery.com is reserved as a <b>neutral, non-vendor banner</b> for potential
+        <b>frameworks, observatories, research programs</b> or public-facing knowledge hubs that need a clear category label.<br>
+        The focus is strictly on <b>descriptive framing</b>. No tools, services, products, audits, security assurances or regulated activities are offered.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary"
+           href="mailto:contact@cryptographicdiscovery.com?subject=CryptographicDiscovery.com%20-%20NDA%20%2F%20Offer">
+          Submit an offer / Request NDA
+        </a>
+
+        <a class="btn btn-concept" href="/concept-note.html">
+          <span class="cn-icon"></span>
+          Concept Note (EN)
+        </a>
+
+        <a class="btn" href="#docs-en">Acquisition Brief (EN/FR)</a>
+        <a class="btn" href="#value-en">Why this name?</a>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        <b>Important notice:</b> CryptographicDiscovery.com is a <b>descriptive semantic asset</b>.
+        It is <b>not</b> affiliated with any government, standards body, agency, or company.
+        It does <b>not</b> provide security products, compliance services, consulting, or certifications.
+        Any future use of the domain and any claims made under it would remain entirely under the responsibility of the acquirer.
+      </p>
+    </section>
+
+    <!-- ============ VALUE EN ============ -->
+    <section id="value-en" class="card" style="margin-top:16px" data-en>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Why CryptographicDiscovery.com is valuable</h3>
+          <div class="list">
+            <div class="chip">Board-level, exact-match category label: “cryptographic discovery” is used in established guidance on crypto-agility and post-quantum migration.</div>
+            <div class="chip">Neutral .com banner for programs that must <b>inventory cryptography in real systems</b> before modernization, migration, or assurance work can be planned responsibly.</div>
+            <div class="chip">Supports a governance narrative: <b>discovery → inventory → prioritisation → roadmap</b>, without promoting any specific tool, vendor, or standard.</div>
+            <div class="chip">Defensive semantic asset if cryptographic discovery becomes a standard prerequisite across regulated industries and critical infrastructure.</div>
+            <div class="chip">Extensible category adjacency: crypto-agility, PQC readiness, certificate and key governance, software supply chain inventory, and operational resilience.</div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <h3>Illustrative use cases</h3>
+          <div class="list">
+            <div class="chip">Public-facing hub explaining why cryptographic discovery precedes large cryptographic migrations and modernization programs.</div>
+            <div class="chip">Neutral “Cryptographic Discovery Guidance” portal signposting official publications and non-commercial references.</div>
+            <div class="chip">Program banner for multi-stakeholder initiatives on cryptographic inventory, PQC readiness and crypto-agility governance.</div>
+            <div class="chip">Research and standards-facing repository describing discovery practices, inventories, and operating models.</div>
+            <div class="chip">Institutional landing page for an internal or cross-organisation “cryptography inventory” effort, with clear public positioning.</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted">
+        This site does <b>not</b> sell tools, services, consulting, compliance or assurance.
+        It offers the <b>CryptographicDiscovery.com</b> domain name as a descriptive digital asset.
+        Any framework, portal, methodology or program built under this banner would be designed and governed independently by the acquirer.
+      </p>
+    </section>
+
+    <!-- ============ TERMINOLOGY EN ============ -->
+    <section class="card" style="margin-top:16px" data-en>
+      <h3>Terminology</h3>
+      <p class="muted">
+        In practice, “cryptographic discovery” is closely connected to <b>cryptographic inventory</b> and <b>crypto-agility</b>.
+        The category covers the disciplined identification of cryptography where it actually lives (applications, endpoints, networks, certificates, dependencies, cloud environments and appliances),
+        so that organizations can plan migrations (including post-quantum) with traceability and governance.
+      </p>
+    </section>
+
+    <!-- ============ REFERENCES EN ============ -->
+    <section class="card" style="margin-top:16px" data-en>
+      <h3>References (non-exhaustive)</h3>
+      <p class="muted">
+        The following public sources illustrate the institutional use of cryptographic discovery and inventory as a workstream for post-quantum migration and crypto-agility planning:
+      </p>
+      <div class="list">
+        <a class="chip" href="https://www.nccoe.nist.gov/crypto-agility-considerations-migrating-post-quantum-cryptographic-algorithms" target="_blank" rel="noopener">
+          NIST NCCoE - Crypto-agility considerations for migrating to post-quantum cryptographic algorithms (Cryptographic Discovery workstream)
+        </a>
+        <a class="chip" href="https://csrc.nist.gov/pubs/cswp/48/mapping-migration-to-pqc-project-capabilities-to-r/ipd" target="_blank" rel="noopener">
+          NIST CSRC - CSWP 48: Mapping NCCoE “Migration to PQC” project capabilities (discovery and inventory tools)
+        </a>
+        <a class="chip" href="https://www.cisa.gov/sites/default/files/2024-09/Strategy-for-Migrating-to-Automated-PQC-Discovery-and-Inventory-Tools.pdf" target="_blank" rel="noopener">
+          CISA - Strategy for Migrating to Automated PQC Discovery and Inventory Tools (PDF)
+        </a>
+      </div>
+      <p class="muted">
+        References are provided for context only. This site does not represent these organizations and does not claim endorsement.
+      </p>
+    </section>
+
+    <!-- ============ ACQUISITION EN ============ -->
+    <section class="card" style="margin-top:16px" data-en>
+      <h3>Acquisition (secure process)</h3>
+      <p class="muted">
+        A typical institutional flow: <b>NDA → strategic discussion → formal offer → escrow → domain transfer</b>.
+        The transaction focuses on the <b>CryptographicDiscovery.com</b> domain name as an intangible digital asset.
+        No software, datasets, audit, compliance, security service, certification, consulting or regulated activity is included unless explicitly agreed in a separate contract.
+      </p>
+      <a class="btn primary"
+         href="mailto:contact@cryptographicdiscovery.com?subject=CryptographicDiscovery.com%20-%20NDA%20%2F%20Offer">
+        Direct contact: contact@cryptographicdiscovery.com
+      </a>
+    </section>
+
+    <!-- ============ DOCS EN ============ -->
+    <section id="docs-en" class="card" style="margin-top:16px" data-en>
+      <h3>Documents / Briefs</h3>
+      <p class="muted">
+        Detailed CryptographicDiscovery.com acquisition briefs (2025-11) are available in English and French for Security, Risk, IT, Legal, Compliance, Public Policy and Executive teams.
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20cryptographicdiscovery-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20cryptographicdiscovery-EN-202511.pdf" download="Acquisition-Brief-CryptographicDiscovery-EN-202511.pdf" type="application/pdf">
+          Download (EN, PDF)
+        </a>
+        <a class="btn" href="/Acquisition%20Brief%20cryptographicdiscovery-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          Ouvrir Brief (FR)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20cryptographicdiscovery-202511.pdf" download="Acquisition-Brief-CryptographicDiscovery-FR-202511.pdf" type="application/pdf">
+          Télécharger (FR, PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ HERO FR ============ -->
+    <section class="card hero" data-fr hidden>
+      <h1>CryptographicDiscovery.com</h1>
+      <img class="logo" src="/logo-cryptographicdiscovery.png" alt="CryptographicDiscovery.com" loading="eager">
+
+      <p class="muted">
+        Nom de domaine <b>descriptif en .com</b> pour la catégorie institutionnelle de <b>cryptographic discovery</b>:
+        l’identification et l’inventaire systématiques de la cryptographie dans les systèmes réels (protocoles, bibliothèques, certificats, clés, dépendances et appliances),
+        afin de soutenir la <b>crypto-agilité</b> et la <b>planification de la migration post-quantique</b>.<br>
+        CryptographicDiscovery.com est réservé comme <b>bannière neutre et non commerciale</b> pour de futurs
+        <b>cadres, observatoires, programmes de recherche</b> ou hubs de connaissance qui ont besoin d’un libellé clair de catégorie.<br>
+        Le périmètre est strictement <b>informatif et descriptif</b>. Aucun outil, service, audit, garantie de sécurité ou activité réglementée n’est proposé.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary"
+           href="mailto:contact@cryptographicdiscovery.com?subject=CryptographicDiscovery.com%20-%20NDA%20%2F%20Proposition">
+          Proposer une offre / Demander un NDA
+        </a>
+
+        <a class="btn btn-concept" href="/concept-note.html">
+          <span class="cn-icon"></span>
+          Concept Note (EN)
+        </a>
+
+        <a class="btn" href="#docs-fr">Brief d’acquisition (EN/FR)</a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        <b>Nota important :</b> CryptographicDiscovery.com est un <b>actif sémantique descriptif</b>.
+        Il n’est <b>affilié</b> à aucun gouvernement, organisme de normalisation, agence ou entreprise.
+        Le site ne fournit <b>ni</b> produits de sécurité, <b>ni</b> services de conformité, <b>ni</b> conseil, <b>ni</b> certification.
+        Toute utilisation future du domaine et tout contenu publié sous cette bannière relèveront exclusivement de l’acquéreur.
+      </p>
+    </section>
+
+    <!-- ============ VALUE FR ============ -->
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr hidden>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Pourquoi CryptographicDiscovery.com a de la valeur</h3>
+          <div class="list">
+            <div class="chip">Libellé exact et “board-level” : “cryptographic discovery” est utilisé dans des travaux publics liés à la crypto-agilité et à la migration post-quantique.</div>
+            <div class="chip">Bannière neutre en .com pour des programmes qui doivent <b>inventorier la cryptographie réelle</b> avant toute modernisation ou migration sérieuse.</div>
+            <div class="chip">Structure un récit de gouvernance : <b>discovery → inventaire → priorisation → feuille de route</b>, sans promouvoir d’outil, d’éditeur ou de standard.</div>
+            <div class="chip">Actif sémantique défensif si la “cryptographic discovery” devient un prérequis standard dans les secteurs régulés et les infrastructures critiques.</div>
+            <div class="chip">Catégorie extensible : crypto-agilité, préparation PQC, gouvernance des certificats et clés, inventaire de la supply chain logicielle, résilience opérationnelle.</div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <h3>Exemples de cas d’usage</h3>
+          <div class="list">
+            <div class="chip">Hub public expliquant pourquoi la découverte et l’inventaire précèdent les grandes migrations cryptographiques.</div>
+            <div class="chip">Portail neutre “Cryptographic Discovery Guidance” orientant vers des publications officielles et des références non commerciales.</div>
+            <div class="chip">Bannière d’un programme multi-acteurs sur l’inventaire cryptographique, la préparation PQC et la gouvernance de crypto-agilité.</div>
+            <div class="chip">Référentiel de pratiques et d’architectures descriptives autour de la découverte et de l’inventaire.</div>
+            <div class="chip">Page institutionnelle de cadrage pour une initiative interne ou inter-organisation d’inventaire cryptographique.</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted">
+        Ce site ne vend <b>ni</b> outils, <b>ni</b> services, <b>ni</b> conseil, <b>ni</b> conformité ou assurance.
+        Il propose le <b>nom de domaine CryptographicDiscovery.com</b> en tant qu’actif numérique descriptif.
+        Tout cadre, portail, méthode ou programme opéré sous cette bannière relèvera exclusivement de l’acquéreur.
+      </p>
+    </section>
+
+    <!-- ============ REFERENCES FR ============ -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Références (non exhaustives)</h3>
+      <p class="muted">
+        Les sources publiques ci-dessous illustrent l’usage institutionnel de la découverte et de l’inventaire cryptographiques comme étape structurante pour la migration post-quantique et la crypto-agilité :
+      </p>
+      <div class="list">
+        <a class="chip" href="https://www.nccoe.nist.gov/crypto-agility-considerations-migrating-post-quantum-cryptographic-algorithms" target="_blank" rel="noopener">
+          NIST NCCoE - Crypto-agility et migration post-quantique (workstream “Cryptographic Discovery”)
+        </a>
+        <a class="chip" href="https://csrc.nist.gov/pubs/cswp/48/mapping-migration-to-pqc-project-capabilities-to-r/ipd" target="_blank" rel="noopener">
+          NIST CSRC - CSWP 48: cartographie du projet “Migration to PQC” (outils de discovery et d’inventaire)
+        </a>
+        <a class="chip" href="https://www.cisa.gov/sites/default/files/2024-09/Strategy-for-Migrating-to-Automated-PQC-Discovery-and-Inventory-Tools.pdf" target="_blank" rel="noopener">
+          CISA - Stratégie de migration vers des outils automatisés de discovery et d’inventaire PQC (PDF)
+        </a>
+      </div>
+      <p class="muted">
+        Références fournies pour contexte uniquement. Aucune affiliation, représentation ou endorsement n’est revendiqué.
+      </p>
+    </section>
+
+    <!-- ============ ACQUISITION FR ============ -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Acquisition (process sécurisé)</h3>
+      <p class="muted">
+        Processus type : <b>NDA → échanges stratégiques → offre formelle → escrow → transfert du domaine</b>.
+        La transaction porte sur le <b>nom de domaine CryptographicDiscovery.com</b> en tant qu’actif numérique incorporel.
+        Aucun logiciel, base de données, audit, service de conformité, prestation de sécurité, certification, conseil ou activité réglementée n’est inclus sauf accord séparé explicite.
+      </p>
+      <a class="btn primary"
+         href="mailto:contact@cryptographicdiscovery.com?subject=CryptographicDiscovery.com%20-%20NDA%20%2F%20Proposition">
+        Contact direct : contact@cryptographicdiscovery.com
+      </a>
+    </section>
+
+    <!-- ============ DOCS FR ============ -->
+    <section id="docs-fr" class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Documents / Briefs</h3>
+      <p class="muted">
+        Briefs d’acquisition détaillés CryptographicDiscovery.com (2025-11) disponibles en anglais et en français pour les équipes Sécurité, Risques, IT, Juridique, Conformité, Affaires publiques et Direction.
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20cryptographicdiscovery-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20cryptographicdiscovery-EN-202511.pdf" download="Acquisition-Brief-CryptographicDiscovery-EN-202511.pdf" type="application/pdf">
+          Download (EN, PDF)
+        </a>
+        <a class="btn" href="/Acquisition%20Brief%20cryptographicdiscovery-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          Ouvrir Brief (FR)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20cryptographicdiscovery-202511.pdf" download="Acquisition-Brief-CryptographicDiscovery-FR-202511.pdf" type="application/pdf">
+          Télécharger (FR, PDF)
+        </a>
+      </div>
+    </section>
+
+    <p class="foot muted">
+      © CryptographicDiscovery.com - descriptive digital asset “cryptographic discovery”.
+      No affiliation with NIST, NCCoE, CISA, governments, agencies, standards bodies, regulators, or private companies.
+      Descriptive use only. No legal, regulatory, security, compliance, audit, certification, technical, financial or investment advice. Contact:
+      <a href="mailto:contact@cryptographicdiscovery.com">contact@cryptographicdiscovery.com</a>
+    </p>
+  </div>
+
+  <script>
+    const frBtn = document.getElementById('btn-fr');
+    const enBtn = document.getElementById('btn-en');
+    function show(lang){
+      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
+      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
+      enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.lang = lang;
+    }
+    frBtn.addEventListener('click', () => show('fr'));
+    enBtn.addEventListener('click', () => show('en'));
+    (function initLang(){ show('en'); })();
+  </script>
+</body>
+</html>
