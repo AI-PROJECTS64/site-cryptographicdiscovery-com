@@ -35,7 +35,13 @@
   form.addEventListener('input', filter);
   form.addEventListener('change', filter);
   form.addEventListener('submit', event => event.preventDefault());
-  form.addEventListener('reset', () => queueMicrotask(filter));
+  form.addEventListener('reset', event => {
+    event.preventDefault();
+    query.value = '';
+    type.value = '';
+    method.value = '';
+    filter();
+  });
   window.addEventListener('hashchange', openLinkedRecord);
   filter();
   openLinkedRecord();
