@@ -4,14 +4,14 @@ English static editorial reference. This branch replaces the acquisition landing
 
 ## Review and release
 
-Work is on `astra/cdri` in `AI-PROJECTS64/site-cryptographicdiscovery-com`. The existing Cloudflare Pages integration creates a branch preview. XB2 reviews the preview and PR before any merge; this work does not authorise a merge. No repository settings or workflows are changed.
+Work is on `astra/cdri` in `AI-PROJECTS64/site-cryptographicdiscovery-com`. The existing Cloudflare Pages integration creates a branch preview. The owner reviews the preview and PR before any merge; this work does not authorise a merge. No repository settings or workflows are changed.
 
-The old acquisition PDFs, concept note and unused old images are retired from the proposed deployed tree. They remain recoverable in Git history and on the unchanged main branch until approval. Legacy acquisition PDF URLs redirect to Contact, where the only domain-availability statement appears. The old concept note redirects to Editorial policy.
+The two acquisition PDFs, concept note, original logo and og.jpg remain in the repository unchanged. The index does not link to those legacy documents. No redirects to Contact or Editorial policy are added. Reference URLs retain the indexed www host. All CDRI pages share the existing og.jpg image. The publisher identity appears once, on a single line on Contact only.
 
 ## Editing
 
 - `data/records.json`: factual source records and per-record last-checked dates.
-- `scripts/build.py`: manual, dependency-free Python static generator; includes page text and the exact approved disclaimer.
+- `scripts/build.py`: manual, dependency-free Python static generator; includes page text and the editorial disclaimer.
 - `assets/style.css` and `assets/index.js`: responsive layout and local filtering. Records are pre-rendered and readable without JavaScript.
 - Generated HTML files are committed, so Cloudflare requires no new build command or automation.
 
@@ -39,10 +39,11 @@ Initial planning estimate: 30–45 minutes per week (roughly 2–3 hours in a fo
 2. Check disputed or unavailable sources again; retain limitations if still unresolved.
 3. Edit affected records and their review dates; add a dated material-change note.
 4. Regenerate HTML manually; verify records, filters, sources and narrow-screen layout.
-5. Submit a branch PR and Cloudflare preview for XB2 approval. No automatic merge.
+5. Submit a branch PR and Cloudflare preview for owner approval. No automatic merge.
 
 Additional services introduced by this implementation: none. Expected additional cash cost at launch: €0 using the existing subscription and hosting. No API, paid service, analytics, external font, scheduled job or new workflow has been activated. Any later API use requires explicit approval, with the user-specified €10/month ceiling; it is not part of this build. Account-wide remaining subscription/hosting quotas are not exposed here, so they must not be claimed as measured.
 
 ## Rights
 
 All rights reserved. Quotation with attribution and a link is welcome. No CC BY 4.0 licence is granted for CDRI. Referenced publications and software retain their respective rights and licences.
+
