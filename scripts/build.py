@@ -6,7 +6,7 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://www.cryptographicdiscovery.com'
 DATE = '2026-09-22'
-DISCLAIMER = 'Independent editorial reference. No affiliation with NIST, NCCoE, NSA, ANSSI, ENISA, OWASP, or any standards body, regulatory authority, or certification organization. Not a standard, certification, or compliance scheme. Does not constitute legal, regulatory, financial, or security advice. Research assisted by AI tools, reviewed and validated before publication. All rights reserved; quotation with attribution and link welcome.'
+DISCLAIMER = 'Independent editorial reference. No affiliation with NIST, NCCoE, NSA, ANSSI, ENISA, OWASP, or any standards body, regulatory authority, or certification organization. Not a standard, certification, or compliance scheme. Does not constitute legal, regulatory, financial, or security advice. Research assisted by AI tools, reviewed and validated before publication. Editorial responsibility: XB2. All rights reserved; quotation with attribution and link welcome.'
 records = json.loads((ROOT / 'data/records.json').read_text())
 records.sort(key=lambda r: r['name'].casefold())
 DEFINITION = 'Cryptographic discovery identifies where and how cryptography is used in software, systems and services.'
