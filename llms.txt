@@ -1,0 +1,12 @@
+# CryptographicDiscovery.com
+
+> Primary-source records on cryptographic discovery: documented scope, methods, output formats and source status. No scoring or ranking.
+
+Independent editorial reference. No affiliation with NIST, NCCoE, NSA, ANSSI, ENISA, OWASP, or any standards body, regulatory authority, or certification organization. Not a standard, certification, or compliance scheme. No legal, financial, medical, regulatory or investment advice. No security advice. Research assisted by AI tools, reviewed and validated before publication. Editorial responsibility: XB2. All rights reserved; quotation with attribution and link welcome.
+
+## Pages
+
+- [Cryptographic Discovery Reference Index · CDRI](https://www.cryptographicdiscovery.com/)
+- [Editorial policy · CDRI](https://www.cryptographicdiscovery.com/editorial-policy)
+- [Contact · CDRI](https://www.cryptographicdiscovery.com/contact)
+- [CryptographicDiscovery.com — Concept Note](https://www.cryptographicdiscovery.com/concept-note)
