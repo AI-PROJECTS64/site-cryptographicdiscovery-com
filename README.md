@@ -2,7 +2,8 @@
 
 Source of https://www.cryptographicdiscovery.com/, an English static editorial reference made of factual, primary-source records. It is neither a standard nor a framework. No ranking, scoring or product testing is offered.
 
-Pages are generated from `data/records.json` by `scripts/build.py`.
+Pages are generated from `data/records.json` by `scripts/build.mjs`.
+To rebuild them, run `node scripts/build.mjs` (Node.js, no dependencies).
 
 ## Rights
 
